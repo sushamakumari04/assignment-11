@@ -1,0 +1,28 @@
+#include<stdio.h>
+int series(int);
+int fact(int);
+int main()
+{
+
+int n;
+n= series(5);
+
+return 0;
+}
+int series(int n)
+{
+int sum=0;
+for(int i=1;i<=n;i++)
+{
+sum=sum+fact(i)/i;
+printf("sum is %d",sum);
+
+}
+
+}
+int fact(int n){
+if(n==1||n==0)
+   return 1;
+return n*fact(n-1);
+
+}
